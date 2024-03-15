@@ -3,11 +3,11 @@ const User = require('../models/User.js')
 const { body, validationResult } = require('express-validator')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
-const dotenv=require('dotenv')
 const fetchUser = require('../middleware/fetchUser.js')
+const dotenv=require('dotenv')
 dotenv.config()
 
-const JWT_SECRET= process.env.secret||'SecretKey';
+const JWT_SECRET= process.env.secret||'ThisIsSecret';
 // console.log(JWT_SECRET)
 
 const router = express.Router();
