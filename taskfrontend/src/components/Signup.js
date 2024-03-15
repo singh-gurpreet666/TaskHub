@@ -7,7 +7,7 @@ function Signup(props) {
     const HandleSubmit=async(e)=>{
         e.preventDefault();
         const {name,email,password}=credentials;
-        const response = await fetch("http://localhost:9000/api/auth.js/createuser",{
+        const response = await fetch("https://taskhub-uvor.onrender.com/api/auth.js/createuser",{
             method:"POST",
             headers:new Headers({
                 "Content-type": "application/json"
